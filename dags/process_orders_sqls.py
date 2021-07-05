@@ -54,7 +54,7 @@ create_stg_orders_sql = """
 CREATE TABLE IF NOT EXISTS stg_orders (
     id VARCHAR NOT NULL,
     product_id VARCHAR,
-    amount DECIMAL,
+    amount INT,
     total_price DECIMAL,
     status VARCHAR,
     event_time timestamp,
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS fact_orders_created (
     product_id VARCHAR,
     created_date_id VARCHAR,
     created_time timestamp,
-    amount DECIMAL,
+    amount INT,
     total_price DECIMAL,
     processed_time timestamp,
     UNIQUE(order_id)
