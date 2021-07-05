@@ -9,3 +9,6 @@ __pycache__
 .vscode/
 /*.session.sql
 data/metabase/
+python3/
+python/
+.idea/
